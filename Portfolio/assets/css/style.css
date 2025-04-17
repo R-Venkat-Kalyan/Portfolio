@@ -86,18 +86,46 @@ section {
 .heading span {
   color: rgb(115, 3, 167);
 }
+
 header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #0e2431;
+  max-width: 60px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  border: 2px solid #0e2431; /* Add a solid border */
+  border-radius: 50%; /* Make the border circular */
+  padding: 2px; /* Slight gap between the image and the border */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  animation: rotateBorder 5s linear infinite; /* Add rotation animation */
 }
+
+header .logo img {
+  width: 100%; /* Ensure the image fills the box */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  display: block;
+}
+
+header .logo:hover {
+  border-color: #fc8c05; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(252, 140, 5, 0.5); /* Add a glowing effect */
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
 header .logo i {
   font-size: 2.2rem;
 }
-header .logo:hover {
-  color: #fc8c05;
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
+
 header .navbar ul {
   list-style: none;
   display: flex;
@@ -1176,4 +1204,31 @@ form .button-area {
 #scroll-top.active {
   top: calc(100% - 12rem);
 }
+
+.custom-alert {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #0e2431;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.custom-alert .success-message {
+    color: green;
+    font-weight: bold;
+}
+
+.custom-alert .info-message {
+    color: yellow;
+    font-style: italic;
+}
+
+
 /* scroll top ends */

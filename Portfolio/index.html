@@ -21,7 +21,7 @@
 
     <!-- navbar starts -->
     <header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Kalyan</a>
+	  <img src="icon1.png" class="logo" alt="icon">
 
         <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
@@ -98,7 +98,7 @@
                 </div>
 
                 <div class="resumebtn">
-                    <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" class="btn"><span>Resume</span>
+                    <a href="Reddy Venkat Kalyan.pdf" target="_blank" class="btn"><span>Resume</span>
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
@@ -544,6 +544,11 @@ my requirements.<br>
 
     </section>
     <!-- footer section ends -->
+<div id="custom-alert" class="custom-alert">
+    <p><span class="success-message">Form Submitted Successfully.</span><br>
+    <span class="info-message">If you do not receive a response, please contact us using the email or phone number provided in the contact section.</span></p>
+</div>
+
 
 
     <!-- scroll top btn -->
@@ -574,6 +579,34 @@ my requirements.<br>
     <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
     <script src="./assets/js/script.js"></script>
+    <script>
+$("#contact-form").submit(function (event) {
+    // emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+
+    // emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+    //     .then(function (response) {
+    //         console.log('SUCCESS!', response.status, response.text);
+    //         document.getElementById("contact-form").reset();
+    //         showCustomAlert();
+    //     }, function (error) {
+    //         console.log('FAILED...', error);
+    //         alert("Form Submission Failed! Try Again");
+    //     });
+
+    showCustomAlert();
+    document.getElementById("contact-form").reset();
+    event.preventDefault();
+});
+
+function showCustomAlert() {
+    var alertBox = document.getElementById("custom-alert");
+    alertBox.style.display = "block";
+    setTimeout(function() {
+        alertBox.style.display = "none";
+    }, 5000); // Hide after 5 seconds
+}
+
+</script>
 
 </body>
 
