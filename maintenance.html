@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hostel Management - Update in Progress</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(135deg, #7e57c2 60%, #29b6f6 100%);
+      color: #fff;
+      font-family: 'Segoe UI', Verdana, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    .container {
+      background: rgba(34, 54, 90, 0.96);
+      border-radius: 1.5em;
+      box-shadow: 0 8px 32px 0 rgba(44,56,99,0.2);
+      padding: 2.5em 1.5em 2em 1.5em;
+      max-width: 350px;
+      width: 100%;
+    }
+    .icon {
+      font-size: 4em;
+      display: block;
+      margin-bottom: 0.5em;
+      animation: bounce 1s infinite alternate;
+    }
+    @keyframes bounce {
+      to { transform: translateY(-10px);}
+    }
+    h1 {
+      font-size: 1.8em;
+      margin: 0.3em 0 0.4em 0;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #29b6f6;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+      margin: 0.7em 0 1em 0;
+      color: #e0e0e0;
+    }
+    .cta-btn {
+      background: #ff4081;
+      color: #fff;
+      border: none;
+      padding: 0.85em 2em;
+      border-radius: 2em;
+      font-size: 1.04em;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(255, 64, 129, 0.16);
+      transition: background 0.15s;
+      margin-bottom: 0.4em;
+      margin-top: 0.7em;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-btn:hover, .cta-btn:focus {
+      background: #f44336;
+    }
+    .note {
+      font-size: 0.95em;
+      color: #b2dfdb;
+      margin-top: 0.6em;
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      .container {
+        max-width: 95vw;
+        padding: 1.5em 0.6em;
+      }
+      h1 {
+        font-size: 1.2em;
+      }
+      .icon {
+        font-size: 2.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="alert" aria-live="polite">
+    <span class="icon" aria-label="Construction/Work in Progress">🛠️</span>
+    <h1>Update Under Progress</h1>
+    <p>
+      Our Hostel Management System is getting an upgrade.<br>
+      <b>We're working behind the scenes</b> to deliver a better experience for private hostels.<br>
+      Please check back soon!
+    </p>
+    <a class="cta-btn" href="https://hostel-management-frontend-link.com" aria-label="Go to front-end home page">
+      Go to Front-End Home
+    </a>
+    <div class="note">
+      Note: Some features may be limited while we're updating.<br>
+      Accessibility maintained – let your screen reader party begin!
+    </div>
+  </div>
+</body>
+</html>
