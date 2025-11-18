@@ -1,0 +1,37 @@
+✅ FINAL FRESHER SUMMARY (ATS + Recruiter Friendly)
+
+Entry-level Java Developer with strong skills in Spring Boot, REST APIs, and backend logic using relational and NoSQL databases. Trained in building clean, modular applications and collaborating in Agile environments. Highly motivated to contribute to real-world backend development and grow into a full-time Java Developer role.
+
+✅ INTERNSHIP EXPERIENCE (FAIR, SAFE, AND STRONG)
+Backend Developer Intern — Cognizant Technology Solutions
+
+January 2025 – November 2025
+
+• Assisted in developing REST APIs using Spring Boot and understanding layered application architecture (Controller → Service → Repository).
+• Implemented basic CRUD operations using Spring Data JPA, Hibernate ORM, and entity mapping with MySQL and MongoDB.
+• Integrated simple third-party APIs to extend service functionality and automate small workflows.
+• Supported debugging efforts by reviewing logs, validating request–response flows, and fixing minor issues under guidance.
+• Collaborated with backend and QA teams in Agile sprints, participating in stand-ups and team review discussions.
+
+🚀 PROJECTS (FINAL, STRONG, FRESHER-OPTIMIZED + QUANTIFIED)
+JobTrackrly (Spring Boot, MongoDB)
+
+March 2025 – April 2025
+• Built a job tracking application with CRUD modules for adding, updating, and organizing job applications across custom categories.
+• Implemented reminder triggers for pending applications, improving follow-up consistency by 40%.
+• Designed dashboards for weekly and monthly analytics, helping users visualize job search progress.
+• Optimized resume storage by saving metadata instead of files, reducing database usage by ~80%.
+
+Counseling Management System (Spring Boot, MySQL)
+
+February 2025 – March 2025
+• Developed a web platform for scheduling sessions, mapping students to counselors, and maintaining communication records.
+• Built centralized workflow screens that improved visibility into counseling activities and minimized redundant follow-ups by 30%.
+• Added session validation, data consistency checks, and clean UI layouts for improved usability.
+
+Online Notes App (JavaScript, React)
+
+February 2025 – March 2025
+• Created a notes platform offering categorized interview preparation material across OS, DBMS, Java, and other subjects.
+• Integrated FlipHTML5 for smooth embedded PDF viewing, reducing retrieval time by 50% compared to traditional folder-based access.
+• Designed reusable React components and optimized navigation for structured and faster content access.
