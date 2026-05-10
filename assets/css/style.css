@@ -523,13 +523,14 @@ header .navbar ul li a:hover {
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
-  width: 90%;
+  width: 80%; 
+  max-width: 800px;
   margin: auto;
   margin-top: 2rem;
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -540,6 +541,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 22, 0.9);
   transition: 0.2s;
+  width: 100%;
 }
 .skills .container .bar:hover {
   box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
@@ -556,7 +558,7 @@ header .navbar ul li a:hover {
   font-size: 4rem;
 }
 .skills .container .bar .info span {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
