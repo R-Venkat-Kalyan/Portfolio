@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -23,7 +24,7 @@
   <style>
 
     *{
-      font-family: 'Inter', sans-serif;
+      font-family:'Inter',sans-serif;
     }
 
     html{
@@ -32,19 +33,15 @@
 
     body{
       background:#020617;
-      color:white;
       overflow-x:hidden;
+      color:white;
     }
-
-    /* BACKGROUND */
 
     .bg-grid{
       background-image:
       radial-gradient(circle at top left, rgba(34,211,238,.08), transparent 25%),
       radial-gradient(circle at bottom right, rgba(99,102,241,.12), transparent 25%);
     }
-
-    /* GLASS */
 
     .glass{
       background:rgba(255,255,255,.05);
@@ -53,12 +50,10 @@
       box-shadow:0 0 40px rgba(99,102,241,.08);
     }
 
-    /* GLOW */
-
     .cyan-glow{
       box-shadow:
-      0 0 15px rgba(34,211,238,.2),
-      0 0 45px rgba(34,211,238,.08);
+      0 0 15px rgba(34,211,238,.25),
+      0 0 45px rgba(34,211,238,.12);
     }
 
     .purple-glow{
@@ -67,32 +62,26 @@
       0 0 45px rgba(99,102,241,.12);
     }
 
-    /* TEXT */
-
     .gradient-text{
       background:linear-gradient(to right,#22d3ee,#6366f1,#ffffff);
       -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
     }
 
-    /* LABEL */
-
     .section-label{
       letter-spacing:.35em;
     }
 
-    /* DIVIDER */
-
     .divider{
       height:1px;
       background:
-      linear-gradient(to right,
+      linear-gradient(
+      to right,
       transparent,
-      rgba(34,211,238,.4),
-      transparent);
+      rgba(34,211,238,.3),
+      transparent
+      );
     }
-
-    /* FLOAT */
 
     .floating{
       animation:floating 5s ease-in-out infinite;
@@ -107,6 +96,7 @@
     }
 
     @keyframes floating{
+
       0%,100%{
         transform:translateY(0px);
       }
@@ -114,9 +104,8 @@
       50%{
         transform:translateY(-12px);
       }
-    }
 
-    /* TYPING */
+    }
 
     .typing::after{
       content:"|";
@@ -129,8 +118,6 @@
       }
     }
 
-    /* HOVER */
-
     .hover-lift{
       transition:all .4s ease;
     }
@@ -139,8 +126,6 @@
       transform:translateY(-10px);
       border-color:rgba(34,211,238,.3);
     }
-
-    /* TIMELINE */
 
     .timeline::before{
       content:"";
@@ -152,16 +137,16 @@
       background:rgba(34,211,238,.2);
     }
 
-    /* CTA */
-
     .pulse{
       animation:pulse 2s infinite;
     }
 
     @keyframes pulse{
+
       50%{
         transform:scale(1.03);
       }
+
     }
 
   </style>
@@ -170,7 +155,7 @@
 
 <body class="bg-grid">
 
-  <!-- FLOATING REFERRAL CTA -->
+  <!-- FLOATING CTA -->
 
   <div class="fixed bottom-6 right-6 z-50">
 
@@ -198,8 +183,6 @@
       <!-- LEFT -->
 
       <div class="space-y-8 hero-left">
-
-        <!-- STATUS -->
 
         <div class="inline-flex items-center gap-3 px-5 py-3 rounded-full glass text-cyan-300 text-sm">
 
@@ -235,20 +218,27 @@
 
             <br><br>
 
-            And honestly?
-            That already means a lot.
+            And honestly,
+            that already means a lot.
 
             <br><br>
 
-            I’m not here to throw a boring PDF at you.
-            I’m here to show you why referring me
-            could genuinely become one of your smartest decisions this week.
+            This page is simply a transparent look into
+            who I am,
+            what I build,
+            how I think,
+            and why I genuinely believe
+            I can become a valuable addition
+            to the right engineering team.
+
+            <br><br>
+
+            Thank you for taking a few minutes
+            to explore my story.
 
           </p>
 
         </div>
-
-        <!-- BUTTONS -->
 
         <div class="flex flex-wrap gap-5">
 
@@ -276,7 +266,7 @@
 
         <div class="relative h-[520px] flex items-center justify-center">
 
-          <!-- CARD 1 -->
+          <!-- CARD -->
 
           <div class="floating glass absolute top-0 left-0 max-w-sm rounded-3xl p-5 cyan-glow">
 
@@ -306,7 +296,7 @@
 
           </div>
 
-          <!-- CARD 2 -->
+          <!-- CARD -->
 
           <div class="floating glass absolute top-40 right-0 max-w-sm rounded-3xl p-5 purple-glow">
 
@@ -325,8 +315,8 @@
                 </p>
 
                 <p class="text-slate-200 mt-2 leading-relaxed">
-                  10x productivity detected.
-                  Ready to ship to your engineering team.
+                  AI-augmented productivity detected.
+                  Engineering velocity increasing rapidly.
                 </p>
 
               </div>
@@ -335,7 +325,7 @@
 
           </div>
 
-          <!-- CARD 3 -->
+          <!-- CARD -->
 
           <div class="floating glass absolute bottom-0 left-12 max-w-sm rounded-3xl p-5 purple-glow">
 
@@ -355,8 +345,8 @@
 
                 <p class="text-slate-200 mt-2 leading-relaxed">
                   Kalyan loves Java,
-                  but management is making him date Pega.
-                  Please intervene professionally.
+                  but management moved him to Pega.
+                  Restoration requested.
                 </p>
 
               </div>
@@ -377,7 +367,264 @@
 
   <div class="divider max-w-6xl mx-auto"></div>
 
-  <!-- MY STORY -->
+  <!-- WHO I AM -->
+
+  <section id="who-i-am" class="py-28 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-20 reveal">
+
+        <p class="section-label text-cyan-300 text-xs font-bold mb-5">
+          01 / WHO I AM
+        </p>
+
+        <h2 class="text-5xl md:text-6xl font-black leading-tight">
+
+          Full-Stack Engineer.
+          <span class="gradient-text">
+            Problem Solver.
+          </span>
+
+        </h2>
+
+        <p class="text-slate-400 text-xl leading-relaxed mt-8 max-w-4xl mx-auto">
+
+          I enjoy building complete digital experiences —
+          from responsive frontend interfaces
+          to scalable backend systems
+          and intelligent AI-driven workflows.
+
+        </p>
+
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+
+        <!-- CARD -->
+
+        <div class="glass rounded-[36px] p-10 reveal hover-lift">
+
+          <div class="flex items-center gap-4">
+
+            <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center">
+
+              <i data-lucide="layers-3" class="w-8 h-8 text-cyan-300"></i>
+
+            </div>
+
+            <div>
+
+              <p class="text-cyan-300 text-sm font-bold tracking-[0.3em]">
+                FULL-STACK ENGINEERING
+              </p>
+
+              <h3 class="text-3xl font-black mt-2">
+                End-to-End Development
+              </h3>
+
+            </div>
+
+          </div>
+
+          <p class="text-slate-400 text-lg leading-relaxed mt-8">
+
+            I design responsive frontend interfaces,
+            build scalable Java backend systems,
+            integrate APIs,
+            manage databases,
+            and connect everything into practical applications
+            that solve real-world problems.
+
+            <br><br>
+
+            I actively use AI tools and AI-assisted workflows
+            to accelerate development,
+            improve UI experiences,
+            and build smarter systems.
+
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+
+        <div class="glass rounded-[36px] p-10 reveal hover-lift">
+
+          <div class="flex items-center gap-4">
+
+            <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center">
+
+              <i data-lucide="briefcase-business" class="w-8 h-8 text-indigo-300"></i>
+
+            </div>
+
+            <div>
+
+              <p class="text-indigo-300 text-sm font-bold tracking-[0.3em]">
+                PROFESSIONAL EXPERIENCE
+              </p>
+
+              <h3 class="text-3xl font-black mt-2">
+                Enterprise Delivery Experience
+              </h3>
+
+            </div>
+
+          </div>
+
+          <p class="text-slate-400 text-lg leading-relaxed mt-8">
+
+            Currently working at Cognizant
+            within the Verizon ecosystem,
+            handling request-response orchestration,
+            REST workflow integrations,
+            telecom operations,
+            and production-level support activities.
+
+            <br><br>
+
+            The role strengthened my adaptability,
+            debugging mindset,
+            communication,
+            and ability to perform under pressure.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- EXPERTISE -->
+
+      <div class="glass rounded-[40px] p-10 mt-10 reveal">
+
+        <div class="flex items-center gap-4 mb-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center">
+
+            <i data-lucide="sparkles" class="w-8 h-8 text-cyan-300"></i>
+
+          </div>
+
+          <div>
+
+            <p class="text-cyan-300 text-sm font-bold tracking-[0.3em]">
+              KEY INTERESTS & EXPERTISE
+            </p>
+
+            <h3 class="text-3xl font-black mt-2">
+              Areas I Love Working On
+            </h3>
+
+          </div>
+
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+
+          <span class="px-5 py-3 rounded-full bg-cyan-500/10 text-cyan-300 font-semibold">
+            Java Backend Engineering
+          </span>
+
+          <span class="px-5 py-3 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold">
+            Spring Boot APIs
+          </span>
+
+          <span class="px-5 py-3 rounded-full bg-cyan-500/10 text-cyan-300 font-semibold">
+            AI Integration
+          </span>
+
+          <span class="px-5 py-3 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold">
+            Full-Stack Development
+          </span>
+
+          <span class="px-5 py-3 rounded-full bg-cyan-500/10 text-cyan-300 font-semibold">
+            Cloud-Native Systems
+          </span>
+
+          <span class="px-5 py-3 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold">
+            Scalable Problem Solving
+          </span>
+
+        </div>
+
+        <p class="text-slate-400 text-lg leading-relaxed mt-8">
+
+          My strongest interests lie in building scalable Java applications,
+          AI-powered systems,
+          developer productivity tools,
+          and user-focused digital experiences
+          that combine performance with practical usability.
+
+        </p>
+
+      </div>
+
+      <!-- SWITCH -->
+
+      <div class="glass rounded-[40px] p-10 mt-10 border border-cyan-400/20 reveal">
+
+        <div class="flex items-center gap-4 mb-8">
+
+          <div class="w-16 h-16 rounded-2xl bg-rose-500/10 flex items-center justify-center">
+
+            <i data-lucide="move-right" class="w-8 h-8 text-rose-300"></i>
+
+          </div>
+
+          <div>
+
+            <p class="text-rose-300 text-sm font-bold tracking-[0.3em]">
+              WHY I AM LOOKING FOR A SWITCH
+            </p>
+
+            <h3 class="text-3xl font-black mt-2">
+              Looking for Growth & Alignment
+            </h3>
+
+          </div>
+
+        </div>
+
+        <p class="text-slate-400 text-lg leading-relaxed">
+
+          While I’m genuinely grateful
+          for the opportunities and learning
+          from my current role,
+          my long-term passion has always been Java,
+          backend engineering,
+          AI integration,
+          and building innovative full-stack systems.
+
+          <br><br>
+
+          Over time,
+          the technical alignment and growth curve
+          toward the areas I genuinely want to master
+          started becoming limited.
+
+          <br><br>
+
+          I’m now actively looking for an environment
+          where I can contribute strongly,
+          continue learning aggressively,
+          and grow deeper in the Java + AI ecosystem
+          that truly excites me.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DIVIDER -->
+
+  <div class="divider max-w-6xl mx-auto"></div>
+
+  <!-- STORY -->
 
   <section id="my-story" class="py-28 px-6">
 
@@ -386,7 +633,7 @@
       <div class="text-center mb-20 reveal">
 
         <p class="section-label text-cyan-300 text-xs font-bold mb-5">
-          01 / MY STORY
+          02 / MY STORY
         </p>
 
         <h2 class="text-5xl md:text-6xl font-black">
@@ -400,8 +647,6 @@
         </h2>
 
       </div>
-
-      <!-- TIMELINE -->
 
       <div class="relative timeline space-y-16">
 
@@ -418,24 +663,36 @@
             </span>
 
             <h3 class="text-3xl font-black mt-4">
-              “What even is a laptop?”
+              “What even is Full-Stack Development?”
             </h3>
 
             <p class="text-slate-300 mt-5 leading-relaxed">
 
-              I started with almost zero technical exposure.
+              I started my journey
+              without even knowing
+              what full-stack development actually meant.
 
               <br><br>
 
-              No coding background.
-              No engineering network.
-              No shortcuts.
+              Through constant learning,
+              experimentation,
+              building projects,
+              and understanding how real-world applications work,
+              I slowly transformed curiosity into capability.
 
               <br><br>
 
-              Just consistency,
-              curiosity,
-              and an obsession with improving every single day.
+              Today,
+              I build responsive frontend experiences,
+              scalable Java backend systems,
+              AI-integrated applications,
+              and continuously experiment with better ways
+              to connect technology with practical human problems.
+
+              <br><br>
+
+              And honestly?
+              I still feel like I’m just getting started.
 
             </p>
 
@@ -473,7 +730,8 @@
               <br><br>
 
               Focused less on memorizing theory
-              and more on building things people could actually use.
+              and more on building things
+              people could actually use.
 
             </p>
 
@@ -538,13 +796,16 @@
 
             <p class="text-slate-300 mt-5 leading-relaxed">
 
-              My heart was always in Java,
+              My strongest passion
+              has always been Java,
               backend engineering,
-              and AI systems.
+              AI systems,
+              and full-stack development.
 
               <br><br>
 
-              But management realized I adapt extremely fast.
+              But management realized
+              I adapt extremely fast.
 
               <br><br>
 
@@ -556,7 +817,8 @@
 
               That’s the paradox:
               my adaptability became the reason
-              I got pushed away from my real stack.
+              I got pushed away from
+              the ecosystem I genuinely love building in.
 
             </p>
 
@@ -569,485 +831,6 @@
     </div>
 
   </section>
-
-  <!-- DIVIDER -->
-
-  <div class="divider max-w-6xl mx-auto"></div>
-
-  <!-- WHY REFER -->
-
-  <section id="why-refer" class="py-28 px-6">
-
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-20 reveal">
-
-        <p class="section-label text-cyan-300 text-xs font-bold mb-5">
-          02 / WHY REFER ME
-        </p>
-
-        <h2 class="text-5xl md:text-6xl font-black">
-
-          I Build Systems That Solve
-          <span class="gradient-text">
-            Real Problems.
-          </span>
-
-        </h2>
-
-        <p class="text-slate-400 text-xl leading-relaxed mt-8 max-w-4xl mx-auto">
-
-          I don’t build “portfolio projects.”
-
-          <br><br>
-
-          I build practical systems
-          that reduce manual work,
-          improve workflows,
-          automate repetitive tasks,
-          and make teams move faster.
-
-        </p>
-
-      </div>
-
-      <!-- PROJECTS -->
-
-      <div class="grid lg:grid-cols-3 gap-8">
-
-        <!-- TASKTRACKER -->
-
-        <div class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center">
-
-            <i data-lucide="layout-dashboard" class="text-cyan-300"></i>
-
-          </div>
-
-          <p class="text-cyan-300 text-xs font-bold tracking-[0.3em] mt-8">
-            LEADERSHIP PROOF
-          </p>
-
-          <h3 class="text-4xl font-black mt-4">
-            TaskTracker
-          </h3>
-
-          <p class="text-xl font-bold mt-6">
-            “I saw an Excel nightmare and killed it.”
-          </p>
-
-          <p class="text-slate-400 mt-6 leading-relaxed">
-
-            Built a productivity tracker
-            that replaced manual workforce tracking
-            for an entire associate pool.
-
-            <br><br>
-
-            Automated reporting,
-            absence management,
-            and story point tracking
-            using Spring Boot + MongoDB.
-
-          </p>
-
-        </div>
-
-        <!-- IQ -->
-
-        <div class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <div class="w-16 h-16 rounded-2xl bg-indigo-500/10 flex items-center justify-center">
-
-            <i data-lucide="brain-circuit" class="text-indigo-300"></i>
-
-          </div>
-
-          <p class="text-indigo-300 text-xs font-bold tracking-[0.3em] mt-8">
-            FUTURE PROOF
-          </p>
-
-          <h3 class="text-4xl font-black mt-4">
-            IntelligenceIQ
-          </h3>
-
-          <p class="text-xl font-bold mt-6">
-            “Most freshers write code. I build systems that teach code.”
-          </p>
-
-          <p class="text-slate-400 mt-6 leading-relaxed">
-
-            Built an AI-powered codebase intelligence hub
-            that acts like a 24/7 onboarding assistant.
-
-            <br><br>
-
-            Reduces KT dependency,
-            accelerates onboarding,
-            and improves developer productivity.
-
-          </p>
-
-        </div>
-
-        <!-- HOSTELS -->
-
-        <div class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center">
-
-            <i data-lucide="building-2" class="text-cyan-300"></i>
-
-          </div>
-
-          <p class="text-cyan-300 text-xs font-bold tracking-[0.3em] mt-8">
-            SCALE PROOF
-          </p>
-
-          <h3 class="text-4xl font-black mt-4">
-            MeenakshiHostels
-          </h3>
-
-          <p class="text-xl font-bold mt-6">
-            “From paper ledgers to cloud-native intelligence.”
-          </p>
-
-          <p class="text-slate-400 mt-6 leading-relaxed">
-
-            Digitized hostel operations
-            for 300+ residents
-            using AWS + MongoDB + Spring Boot.
-
-            <br><br>
-
-            Replaced outdated paper workflows
-            with a scalable digital ecosystem.
-
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- EXPERTISE -->
-
-      <div class="mt-24 reveal">
-
-        <div class="glass rounded-[36px] p-10">
-
-          <div class="flex flex-wrap gap-4 mb-8">
-
-            <span class="px-5 py-3 rounded-full bg-cyan-500/10 text-cyan-300 font-semibold">
-              Java
-            </span>
-
-            <span class="px-5 py-3 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold">
-              Spring Boot
-            </span>
-
-            <span class="px-5 py-3 rounded-full bg-cyan-500/10 text-cyan-300 font-semibold">
-              Spring AI
-            </span>
-
-            <span class="px-5 py-3 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold">
-              AWS
-            </span>
-
-            <span class="px-5 py-3 rounded-full bg-cyan-500/10 text-cyan-300 font-semibold">
-              MongoDB
-            </span>
-
-            <span class="px-5 py-3 rounded-full bg-indigo-500/10 text-indigo-300 font-semibold">
-              Tailwind CSS
-            </span>
-
-          </div>
-
-          <h3 class="text-4xl font-black">
-            Strong Areas & Expertise
-          </h3>
-
-          <p class="text-slate-400 text-lg leading-relaxed mt-6">
-
-            Backend architecture.
-            REST APIs.
-            AI-integrated systems.
-            Responsive UI engineering.
-            Cloud deployment.
-            MongoDB aggregation.
-            Problem-solving under pressure.
-
-            <br><br>
-
-            I move fast,
-            adapt faster,
-            and genuinely enjoy building systems that make life easier for people.
-
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- PORTFOLIO CTA -->
-
-      <div class="text-center mt-20 reveal">
-
-        <p class="text-slate-400 text-lg mb-8">
-          Want the full deep-dive into all my work and experiments?
-        </p>
-
-        <a href="https://reddyvenkatkalyan.netlify.app/"
-           target="_blank"
-           class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-indigo-500 text-white text-xl font-black purple-glow hover:scale-105 transition-all">
-
-          <i data-lucide="globe"></i>
-
-          Visit Full Portfolio
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- DIVIDER -->
-
-  <div class="divider max-w-6xl mx-auto"></div>
-
-  <!-- LINKS -->
-
-  <section class="py-28 px-6">
-
-    <div class="max-w-6xl mx-auto">
-
-      <div class="text-center mb-20 reveal">
-
-        <p class="section-label text-cyan-300 text-xs font-bold mb-5">
-          03 / CONNECT & VERIFY
-        </p>
-
-        <h2 class="text-5xl md:text-6xl font-black">
-
-          Everything You Need
-          <span class="gradient-text">
-            In One Place.
-          </span>
-
-        </h2>
-
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        <!-- RESUME -->
-
-        <a href="https://drive.google.com/file/d/1S2osfvnWuh89ZKiPdZhwaoUqJeURiiFh/view"
-           target="_blank"
-           class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <i data-lucide="file-text" class="w-12 h-12 text-cyan-300"></i>
-
-          <h3 class="text-3xl font-black mt-8">
-            Resume
-          </h3>
-
-          <p class="text-slate-400 mt-5">
-            Verified experience,
-            certifications,
-            achievements,
-            and project history.
-          </p>
-
-        </a>
-
-        <!-- PORTFOLIO -->
-
-        <a href="https://reddyvenkatkalyan.netlify.app/"
-           target="_blank"
-           class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <i data-lucide="monitor" class="w-12 h-12 text-indigo-300"></i>
-
-          <h3 class="text-3xl font-black mt-8">
-            Portfolio
-          </h3>
-
-          <p class="text-slate-400 mt-5">
-            Interactive showcase
-            of projects,
-            UI experiments,
-            and backend systems.
-          </p>
-
-        </a>
-
-        <!-- LINKEDIN -->
-
-        <a href="https://linkedin.com/in/reddy-venkat-kalyan"
-           target="_blank"
-           class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <i data-lucide="linkedin" class="w-12 h-12 text-cyan-300"></i>
-
-          <h3 class="text-3xl font-black mt-8">
-            LinkedIn
-          </h3>
-
-          <p class="text-slate-400 mt-5">
-            Professional journey,
-            enterprise updates,
-            certifications,
-            and networking.
-          </p>
-
-        </a>
-
-        <!-- GITHUB -->
-
-        <a href="https://github.com/R-Venkat-Kalyan"
-           target="_blank"
-           class="glass rounded-[32px] p-8 hover-lift reveal">
-
-          <i data-lucide="github" class="w-12 h-12 text-indigo-300"></i>
-
-          <h3 class="text-3xl font-black mt-8">
-            GitHub
-          </h3>
-
-          <p class="text-slate-400 mt-5">
-            Deep-dive into architecture,
-            backend logic,
-            APIs,
-            and clean engineering work.
-          </p>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- DIVIDER -->
-
-  <div class="divider max-w-6xl mx-auto"></div>
-
-  <!-- HELPING HAND -->
-
-  <section id="helping-hand" class="py-32 px-6 relative overflow-hidden">
-
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(34,211,238,.1),transparent_40%)]"></div>
-
-    <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
-
-      <p class="section-label text-cyan-300 text-xs font-bold mb-5">
-        04 / THE HELPING HAND
-      </p>
-
-      <h2 class="text-5xl md:text-7xl font-black leading-tight">
-
-        Sometimes all someone needs
-        is a
-        <span class="gradient-text">
-          bridge forward.
-        </span>
-
-      </h2>
-
-      <p class="text-slate-400 text-xl leading-relaxed mt-10">
-
-        We’ve all faced moments
-        where we needed someone
-        to open the right door.
-
-        <br><br>
-
-        For me,
-        that moment is now.
-
-        <br><br>
-
-        I’m not asking for sympathy.
-        I’m asking for an opportunity
-        to prove why your referral was the right call.
-
-      </p>
-
-      <div class="glass rounded-[36px] p-10 mt-14">
-
-        <p class="text-3xl font-bold italic leading-relaxed">
-
-          “I’m like that perfect system update —
-          I fix the bugs you didn’t know you had
-          and I don’t crash your server.”
-
-        </p>
-
-      </div>
-
-      <div class="mt-14">
-
-        <a href="mailto:reddy.venkat.kalyan04@gmail.com"
-           class="inline-flex items-center gap-4 bg-cyan-400 text-slate-950 px-12 py-6 rounded-full text-xl font-black hover:scale-105 transition-all cyan-glow pulse">
-
-          <i data-lucide="send"></i>
-
-          Submit Referral
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer class="py-10 border-t border-white/5 text-center">
-
-    <p class="text-slate-500">
-
-      Built by Reddy Venkat Kalyan —
-      Java Developer • AI Builder • Enterprise Survivor
-
-    </p>
-
-  </footer>
-
-  <!-- SCRIPTS -->
-
-  <script>
-
-    lucide.createIcons();
-
-    ScrollReveal().reveal('.reveal',{
-      distance:'40px',
-      duration:1200,
-      interval:120,
-      easing:'ease-out',
-      origin:'bottom',
-      reset:false
-    });
-
-    ScrollReveal().reveal('.hero-left',{
-      distance:'60px',
-      duration:1400,
-      origin:'left'
-    });
-
-    ScrollReveal().reveal('.hero-right',{
-      distance:'60px',
-      duration:1400,
-      origin:'right'
-    });
-
-  </script>
 
 </body>
 </html>
